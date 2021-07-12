@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Star from "./Star";
 import { createArray } from "./utils";
 
-export default function StarRating ({totalStars = 5, selectedStar = 0}) {
-    // const [selectedStar, setSelectedStar] = useState(3);
+export default function StarRating ({totalStars = 5}) {
+    const [selectedStar, setSelectedStar] = useState(3);
 
     return (
         <>
@@ -11,7 +11,7 @@ export default function StarRating ({totalStars = 5, selectedStar = 0}) {
             <Star
             key={i}
             selected={i < selectedStar}
-            // onSelect={() => setSelectedStar(i + 1)}
+            onSelect={() => setSelectedStar(i + 1)}
             />
             
         ))}
