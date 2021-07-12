@@ -18,7 +18,6 @@ function App() {
           setColors(newColors);
         }}
       />
-
     </div>
   );
 }
